@@ -1,0 +1,78 @@
+.home-section {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.home-section>div {
+    background-color: #77D4FC;
+    display:flex; 
+    flex-direction: column;
+    align-items:center;
+    padding:60px;
+    border-radius: 15px;
+    margin:30px;
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+}
+
+#labels-fields {
+    display:flex;
+    flex-direction:column;
+    font-weight:bold;
+    color:black;
+    margin: 10px;
+}
+
+#labels-fields>input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: black;
+    background-color: #77D4FC;
+    color:black;
+}
+
+#submit-btn-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+}
+
+#submit-btn-wrapper>button{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight:bold;
+    border:none;
+    background-color: black;
+    color: #77D4FC;
+}
+
+#submit-btn-wrapper>button:hover {
+    background-color: white;
+}
+
+textarea {
+    height: 130px;
+    border-radius: 5px;
+}
+
+button:first-child {
+    background-color:yellow;
+}
+
+button:nth-child(2) {
+    background-color:red;
+}
+
+button:first-child:hover {
+    background-color:white;
+}
+
+button:nth-child(2):hover {
+    background-color:white;
+}
