@@ -16,7 +16,7 @@ export const Home = () => {
         const fetchUsers = async () => {
 
             try {
-                const response = await axios.get('http://localhost:3000/datas')
+                const response = await axios.get('https://p4-c8q1.onrender.com/datas')
                 setData(response.data.results);
             } catch (error) {
                 console.error('Error details:', error);
@@ -43,7 +43,7 @@ export const Home = () => {
     
             if (editingId) {
                 // Update existing item
-                axios.patch(`http://localhost:3000/data/${editingId}`, userObj)
+                axios.patch(`https://p4-c8q1.onrender.com/data/${editingId}`, userObj)
                     .then(response => {
                         console.log(response);
                         resetForm();
@@ -51,7 +51,7 @@ export const Home = () => {
                     .catch(() => console.log('Error in updating user'));
             } else {
                 // Create new item
-                axios.post('http://localhost:3000/data', userObj)
+                axios.post('https://p4-c8q1.onrender.com/data', userObj)
                     .then(response => {
                         console.log(response);
                         resetForm();
@@ -65,7 +65,7 @@ export const Home = () => {
     }
 
     const handleDelete = (id) => {
-        axios.delete(`http://localhost:3000/data/${id}`)
+        axios.delete(`https://p4-c8q1.onrender.com/data/${id}`)
             .then(response => console.log(response))
             .catch(error => console.error('Error deleting user:', error));
         
